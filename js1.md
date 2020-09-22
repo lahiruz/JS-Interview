@@ -16,9 +16,6 @@
 
 * Javascript has two main scopes. **Global** scope where window object exists and **Functional** scope within functions. In addition to that, let and const allows you to define **Block** level scoping.
 
-* Javascript hoisting is important concept where all variable and function declarations are moved to the scope that they have defined.
+* Javascript hoisting is important concept where all **variable and function declarations** are moved to the scope that they have defined. When hoisting happens alway Function declarations gets priority over the variables. If someone declare variable and function with same name that 
 
-* Variables and constants declared with let and const are not hoisted.
-
-
-
+* Variables and constants declared with let and const are not hoisted. Also Function expressions are not hoisted.
