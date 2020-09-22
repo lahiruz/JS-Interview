@@ -8,9 +8,17 @@
 
 * You can create variables using var, let and const.
 
-* Javascript have **Number, String, Boolean, Null, Undefined, Symbol & Object** data types. First 6 are primitive data types. You can use **typeof** to see the actual type of the variable. Remember Array is also a special type of an object.
+* Javascript have **Number**, **String**, **Boolean**, **Null**, **Undefined**, **Symbol**(introduced in ES6) & **Object** data types. First 6 are primitive data types. You can use **typeof** to see the actual type of the variable. Remember Array is also a special type of an object.
 
-* There are multiple ways to define functions. **Function Declaration**, **Function Expression**(can be used where you to pass function as a parameter), **Function Constructor**(which is not a recommended way) and **Self Execution Function(IIFE)**.
+* There are multiple ways to define functions. **Function Declaration**, **Function Expression**(can be used where you to pass function as a parameter), **Function Constructor**(which is not a recommended way), **Self Execution Function(IIFE)** & **Arrow Function**(introduced in ES6).
 
-* Javascript has multiple scopes. **Global** scope where window object exists, **Functional** scope and **Block** scope where you have variable defined with let keyword.
+* Arrow functions gives you the lexical binding and allows you to access parent scope.
+
+* Javascript has two main scopes. **Global** scope where window object exists and **Functional** scope within functions. In addition to that, let and const allows you to define **Block** level scoping.
+
+* Javascript hoisting is important concept where all variable and function declarations are moved to the scope that they have defined.
+
+* Variables and constants declared with let and const are not hoisted.
+
+
 
