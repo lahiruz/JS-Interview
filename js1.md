@@ -12,6 +12,21 @@
 
 * There are multiple ways to define functions. **Function Declaration**, **Function Expression**(can be used where you to pass function as a parameter), **Function Constructor**(which is not a recommended way), **Self Execution Function(IIFE)** & **Arrow Function**(introduced in ES6).
 
+* A closure is the combination of a function and the [lexical environment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#:~:text=A%20closure%20is%20the%20combination,state%20(the%20lexical%20environment).&text=In%20JavaScript%2C%20closures%20are%20created,created%2C%20at%20function%20creation%20time) within which that function was declared.
+
+    ```js
+    function makeFunc() {
+      var name = 'Mozilla';
+      function displayName() {
+        alert(name);
+      }
+      return displayName;
+    }
+
+    var myFunc = makeFunc();
+    myFunc(); // myFunc is a closure where it remembers scope within makeFunc
+    ```
+
 * Arrow functions gives you the lexical binding and allows you to access parent scope.
 
 * Always define functions and varibales before using them. You can define variable without "var" keyword. But it is not a good practice. Therefore, make sure to declare variables. Using ES5 "use strict" directive will help help you to alert when you forget to define variables.
@@ -22,9 +37,9 @@
 
 * If someone declare variable and function with same name that variable declaration will be ignored (refer following image).
 
-<div style="align: center">
-    <img src="./assests/hoisting1.png" />
-</div>
+    <div style="align: center">
+        <img src="./assests/hoisting1.png" />
+    </div>
 
 
 * Variables and constants declared with let and const are not hoisted. Also Function expressions are not hoisted.
