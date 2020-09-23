@@ -29,6 +29,10 @@
 
 * Arrow functions gives you the lexical binding and allows you to access parent scope.
 
+    <div style="align: center">
+        <img src="./assests/lexical-bind.png" />
+    </div>
+
 * Always define functions and varibales before using them. You can define variable without "var" keyword. But it is not a good practice. Therefore, make sure to declare variables. Using ES5 "use strict" directive will help help you to alert when you forget to define variables.
 
 * Javascript has two main scopes. **Global** scope where window object exists and **Functional** scope within functions. In addition to that, let and const allows you to define **Block** level scoping.
