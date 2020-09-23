@@ -1,6 +1,6 @@
 # Important things to know about javascript (part 1)
 
-## variables, functions, objects
+## variables, functions, scope, objects
 
 * Javascript is standardized as **ECMAScript(ES)** which is maintained by a committee called **TC39**. Each ES version decide what kind of features will be released to Javascript language.
 
@@ -14,8 +14,17 @@
 
 * Arrow functions gives you the lexical binding and allows you to access parent scope.
 
+* Always define functions and varibales before using them. You can define variable without "var" keyword. But it is not a good practice. Therefore, make sure to declare variables. Using ES5 "use strict" directive will help help you to alert when you forget to define variables.
+
 * Javascript has two main scopes. **Global** scope where window object exists and **Functional** scope within functions. In addition to that, let and const allows you to define **Block** level scoping.
 
-* Javascript hoisting is important concept where all **variable and function declarations** are moved to the scope that they have defined. When hoisting happens alway Function declarations gets priority over the variables. If someone declare variable and function with same name that 
+* Javascript hoisting is important concept where all **variable and function declarations** are moved to the scope that they have defined. When hoisting happens alway Function declarations gets priority over the variables. 
+
+* If someone declare variable and function with same name that variable declaration will be ignored (refer following image).
+
+<div style="align: center">
+    <img src="./assests/hoisting1.png" />
+</div>
+
 
 * Variables and constants declared with let and const are not hoisted. Also Function expressions are not hoisted.
