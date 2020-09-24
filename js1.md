@@ -15,7 +15,7 @@
 * You can use **call**, **apply** and **bind** with functions.
     - **call**: a function can be called with given **this** value and provided arguments.
         ```js
-        myFunc.call(thisContext, arg1, arg2, ...); 
+        myFunc.call(thisContext, arg1, arg2, ...);
         ```
     - **apply**: Behaviour is similer to call. But the arguments are provided as array.
         ```js
@@ -30,8 +30,8 @@
 
     ```js
     var person = {
-        firstName: 'Lahiru',
-        lastName: 'Jayamanna'
+        firstName: 'John',
+        lastName: 'Doe'
     }
     
     function myFun(greeting) {
@@ -39,11 +39,11 @@
     }
     
     myFun('hello!'); // hello! undefined undefined
-    myFun.call(person, 'hello!'); // hello! Lahiru Jayamanna
-    myFun.apply(person, ['hello!']); // hello! Lahiru Jayamanna
+    myFun.call(person, 'hello!'); // hello! John Doe
+    myFun.apply(person, ['hello!']); // hello! John Doe
     
     myFun.bind(person, 'hello!'); // return an invokable function
-    myFun.bind(person, 'hello!')(); // hello! Lahiru Jayamanna
+    myFun.bind(person, 'hello!')(); // hello! John Doe
     ```
 
 * A closure is the combination of a function and the [lexical environment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#:~:text=A%20closure%20is%20the%20combination,state%20(the%20lexical%20environment).&text=In%20JavaScript%2C%20closures%20are%20created,created%2C%20at%20function%20creation%20time) within which that function was declared.
