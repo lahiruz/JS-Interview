@@ -2,6 +2,12 @@
 
 * Javascript is standardized as **ECMAScript(ES)** which is maintained by a committee called **TC39**. Each ES version decide what kind of features will be released to Javascript language.
 
+* Javascript is **interpreted** and **compiled** language. ([more details can be found here](https://medium.com/@lsampath999/do-you-know-how-exactly-browser-works-9f510321ee9e))
+
+* Currently Javascript is used as both client-side([Angular](https://angular.io/), [React](https://reactjs.org/), etc.) and server-side([NodeJS](https://nodejs.org/en/)) language.
+
+* V8 (Google Chrome, NodeJS, Electron), SpiderMonkey (Firefox), Chakra (Microsoft Edge), Javascript Core (Safari, React Native), etc… are samples for available Browser Javascript Engines out there.
+
 * Everything in Javascript is an **Object**. These objects property key is always a string. Each property has attributes of **value**, **writable**, **enumerable** (can iterate via for..in loops) and **configurable**(is deletable).
 
 ## variables & data types
