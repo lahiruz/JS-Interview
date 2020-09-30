@@ -63,11 +63,20 @@
     myFunc(); // myFunc is a closure where it remembers scope within makeFunc
     ```
 
-* Arrow functions gives you the lexical binding and allows you to access parent scope.
+* Arrow functions gives you the lexical binding and allows you to access parent scope. Refer age variable in the following example.
+    
+    ```js
+    function Person() {
+      this.age = 0;
+      
+      setInterval(() => {
+        this.age++;
+        console.log(this.age);
+      }, 1000);
+    }
 
-    <div style="align: center">
-        <img src="./assests/lexical-bind.png" />
-    </div>
+    var p = Person();
+    ```
 
 * Always define functions and varibales before using them. You can define variable without "var" keyword. But it is not a good practice. Therefore, make sure to declare variables. Using ES5 "use strict" directive will help help you to alert when you forget to define variables.
 
