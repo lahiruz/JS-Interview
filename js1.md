@@ -114,7 +114,7 @@
     }
     ```
 
-* Object properties can be accessed in this way ->  person.firstName -> [objectName].[propertyKeyName]
+* Object properties can be accessed in this way ->  person.firstName -> [objectName].[propertyKeyName]. In ES5 they have introduced getters and setters to access object properties.
 
 * Also you can assign new properties as follows.
 
