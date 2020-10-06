@@ -8,7 +8,7 @@
 
 * V8 (Google Chrome, NodeJS, Electron), SpiderMonkey (Firefox), Chakra (Microsoft Edge), Javascript Core (Safari, React Native), etc… are samples for available Browser Javascript Engines out there.
 
-* Everything in Javascript is an **Object**. These objects property key is always a string. Each property has attributes of **value**, **writable**, **enumerable** (can iterate via for..in loops) and **configurable**(is deletable).
+* Everything in Javascript is an [**Object**](refer ). .
 
 ## variables & data types
 
@@ -102,3 +102,29 @@
 
 
 * Variables and constants declared with let and const are not hoisted. Also Function expressions are not hoisted.
+
+## objects
+
+* An object is collection of propeties. A property is key value pair. Each key is always a string and value can be anything. Each property has attributes of **value**, **writable**, **enumerable** (can iterate via for..in loops) and **configurable**(is deletable)
+
+* There are multiple ways to create objects in Javascript. 
+    - Object literal
+    
+    ```js
+    var person = {
+        firstName: 'John',
+        lastName: 'Doe'
+    }
+    ```
+    
+    - Object.create
+    
+    ```js
+    var person = {
+        firstName: 'John',
+        lastName: 'Doe'
+    }
+    
+    var boy = Object.create(person) // this will set person object as the prototype of new boy object.
+    ```
+
