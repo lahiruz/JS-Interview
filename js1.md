@@ -8,7 +8,7 @@
 
 * V8 (Google Chrome, NodeJS, Electron), SpiderMonkey (Firefox), Chakra (Microsoft Edge), Javascript Core (Safari, React Native), etc… are samples for available Browser Javascript Engines out there.
 
-* Everything in Javascript is an [**Object**](refer ). .
+* Everything in Javascript is an **Object** (refer objects section for more details).
 
 ## variables & data types
 
@@ -105,7 +105,25 @@
 
 ## objects
 
-* An object is collection of propeties. A property is key value pair. Each key is always a string and value can be anything. Each property has attributes of **value**, **writable**, **enumerable** (can iterate via for..in loops) and **configurable**(is deletable)
+* An object is collection of propeties. A property is key value pair. Each key is always a string and value can be anything. Each property has attributes of **value**, **writable**, **enumerable** (can iterate via for..in loops) and **configurable**(is deletable). Sample object shown in below.
+
+    ```js
+    var person = {
+        firstName: 'John',
+        lastName: 'Doe'
+    }
+    ```
+
+* Object properties can be accessed in this way ->  person.firstName -> [objectName].[propertyKeyName]
+
+* Also you can assign new properties as follows.
+
+    ```js
+    person['age'] = 12;
+    ```
+    
+    - Also by using [Object.defineProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) you can add new propeties as well as you can change the existing properties.
+    
 
 * There are multiple ways to create objects in Javascript. 
     - Object literal
