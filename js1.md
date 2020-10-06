@@ -103,6 +103,8 @@
 
 * Variables and constants declared with let and const are not hoisted. Also Function expressions are not hoisted.
 
+* For more details refer [Hoisting More Info](https://www.youtube.com/watch?v=zzeXzb9AFp8&list=PLlN2Z5_OYXFoUEkrZgxVENs-_wDdifln3&index=4&ab_channel=SCIENTIA24X7)
+
 ## objects
 
 * An object is collection of propeties. A property is key value pair. Each key is always a string and value can be anything. Each property has attributes of **value**, **writable**, **enumerable** (can iterate via for..in loops) and **configurable**(is deletable). Sample object shown in below.
@@ -116,7 +118,7 @@
 
 * Object properties can be accessed in this way ->  person.firstName -> [objectName].[propertyKeyName]. In ES5 they have introduced getters and setters to access object properties.
 
-* Also you can assign new properties as follows.
+* After creating an object you can assign new properties to that as follows.
 
     ```js
     person['age'] = 12;
@@ -126,23 +128,12 @@
     
 
 * There are multiple ways to create objects in Javascript. 
-    - Object literal
-    
-    ```js
-    var person = {
-        firstName: 'John',
-        lastName: 'Doe'
-    }
-    ```
-    
+    - Object literal 
     - Object.create
-    
-    ```js
-    var person = {
-        firstName: 'John',
-        lastName: 'Doe'
-    }
-    
-    var boy = Object.create(person) // this will set person object as the prototype of new boy object.
-    ```
+    - Using constructor function
+    - Using ES6 classes
+
+* To see more details of objects please see follwoing videos.
+   - [Objects (Fundamentals)](https://www.youtube.com/watch?v=QqO8NI7i8ts&list=PLlN2Z5_OYXFoUEkrZgxVENs-_wDdifln3&index=7&ab_channel=SCIENTIA24X7)
+   - [Objects (Advanced)](https://www.youtube.com/watch?v=IHVJtBPSAVY&list=PLlN2Z5_OYXFoUEkrZgxVENs-_wDdifln3&index=8&ab_channel=SCIENTIA24X7)
 
