@@ -133,6 +133,8 @@
     - Object.create
     - Using constructor function
     - Using ES6 classes
+    
+* In Javascript objects are stored as references while primitives are stored as values. Therefore, when you try to compare two objects it will only compare object references.
 
 * To see more details of objects please see follwoing videos.
    - [Objects (Fundamentals)](https://www.youtube.com/watch?v=QqO8NI7i8ts&list=PLlN2Z5_OYXFoUEkrZgxVENs-_wDdifln3&index=7&ab_channel=SCIENTIA24X7)
