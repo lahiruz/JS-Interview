@@ -3,4 +3,4 @@ This will consists with several important javascript related details which will 
 
 While I am adding more details you can check on this first. :wink:
 
-- [Important things to know about javascript (part 1)](https://github.com/lahiruz/JS-Interview/blob/master/js1.md)
+- [Basics, variables, functions, scope, hoisting, objects)](https://github.com/lahiruz/JS-Interview/blob/master/js1.md)
