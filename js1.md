@@ -1,4 +1,4 @@
-# Important things to know about javascript (part 1)
+# Basics, variables, functions, scope, hoisting, objects
 
 * Javascript is standardized as **ECMAScript(ES)** which is maintained by a committee called **TC39**. Each ES version decide what kind of features will be released to Javascript language.
 
