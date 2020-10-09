@@ -10,6 +10,8 @@
 
 * Everything in Javascript is an **Object** (refer objects section for more details).
 
+* Javascript also called as a multi-paradigm language. That means you can do **Functional Programming** as well as **Object Oriented Programming** with JavaScript. Javascript supports OOP with [**prototypal inheritance**](https://github.com/lahiruz/JS-Interview/blob/master/basics/prototype.md).
+
 ## variables & data types
 
 * You can create variables using **var**, **let** and **const**.
