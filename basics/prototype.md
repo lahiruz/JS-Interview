@@ -12,4 +12,4 @@
 
 * Protptype is a special type of object which is associated with every function and object in Javascript. 
 
-* You can access and modify prototype in functions and prototype in objects is not visible. In chrome and firefox you can check prototype properties by using **__proto__** key.
+* You can access and modify prototype in functions and prototype in objects is not visible. In chrome and firefox you can check prototype properties by using **\_\_proto\_\_** key.
