@@ -49,3 +49,51 @@
         return this.firstName + " " + this.lastName;
     };
     ```
+* By defining propeties in prototype you can save memory. Consider previous example and assume you want to create many person objects. In that case, all person objects will add reference to those properties inside prototype without creating them multiple times.
+
+## prototypal inheritance
+
+* In Javascript prototypal inheritance is happended via **Prototypal Chain**.
+
+* Let's see how it works.
+
+    ```js
+    function Person(name) {
+        this.name = name;
+    }
+
+    Person.prototype.sleep = function () {
+        console.log("Sleep... " + this.name);
+    }
+
+    function Child(name) {
+        this.name = name;
+    }
+
+    Child.prototype = Object.create(new Person()); // (see [object.create]())
+
+    Child.prototype.eat = function () {
+        console.log("Eat... " + this.name);
+    }
+
+    var child = new Child('Sam');
+    child.eat(); // Eat... Sam
+    child.sleep(); // Sleep... Sam
+    ```
+
+    Here is what's happening inside. 
+
+    <div style="align: center">
+        <img src="../assests/proto3.png" />
+    </div>
+
+* ES5 introduced the Object.getPrototypeOf() method that returns the prototype of a specified object.
+    
+    ```js
+    console.log(Object.getPrototypeOf(child)); // Person {eat: ƒ}
+    ```
+* refer following image to get more details.
+
+    <div style="align: center">
+        <img src="../assests/proto4.png" />
+    </div>
