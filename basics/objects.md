@@ -30,6 +30,7 @@
         }
         ```
     - Object.create
+        - The first argument you give Object.create is the object to use as the prototype of the object it creates.
     
        ```js
         var person = {
@@ -39,6 +40,7 @@
         
         var boy = Object.create(person); // This will create an empty object but person object will set as the prototype of the boy object. In Chrome you can see prototype of an object using __proto__ property. Ex: boy.__proto__ 
         ```
+        - Also [read this](https://stackoverflow.com/questions/16666231/difference-between-object-createobject-prototype-object-createobject-and-o#:~:text=var%20o%20%3D%20Object.-,create(Object)%3B,a%20function%20as%20its%20prototype.) if you still have questions.
     
     - Using constructor function
     - Using ES6 classes
