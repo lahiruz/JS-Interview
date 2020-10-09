@@ -6,7 +6,7 @@
 
 * Currently Javascript is used as both client-side([Angular](https://angular.io/), [React](https://reactjs.org/), etc.) and server-side([NodeJS](https://nodejs.org/en/)) language.
 
-* V8 (Google Chrome, NodeJS, Electron), SpiderMonkey (Firefox), Chakra (Microsoft Edge), Javascript Core (Safari, React Native), etc… are samples for available Browser Javascript Engines out there.
+* V8 (Google Chrome, NodeJS, Electron), SpiderMonkey (Firefox), Chakra (Microsoft Edge), Javascript Core (Safari, React Native), etc… are samples for available Browser Javascript Engines out there. (If you want clear idea about how this works check my article [here](https://medium.com/@lsampath999/do-you-know-how-exactly-browser-works-9f510321ee9e))
 
 * Everything in Javascript is an **Object** (refer objects section for more details).
 
