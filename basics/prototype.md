@@ -1,4 +1,4 @@
-# Welcome to protptype
+# Welcome to prototype
 
 * Consider the following example.
 
