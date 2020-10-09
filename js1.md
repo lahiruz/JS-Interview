@@ -106,6 +106,10 @@
 
 * For more details refer [Hoisting More Info](https://www.youtube.com/watch?v=zzeXzb9AFp8&list=PLlN2Z5_OYXFoUEkrZgxVENs-_wDdifln3&index=4&ab_channel=SCIENTIA24X7)
 
+## protptype
+
+* Consider the following example 
+
 ## objects
 
 * An object is collection of propeties. A property is key value pair. Each key is always a string and value can be anything. Each property has attributes of **value**, **writable**, **enumerable** (can iterate via for..in loops) and **configurable**(is deletable). Sample object shown in below.
@@ -130,7 +134,24 @@
 
 * There are multiple ways to create objects in Javascript. 
     - Object literal 
+    
+        ```js
+        var person = {
+            firstName: 'John',
+            lastName: 'Doe'
+        }
+        ```
     - Object.create
+    
+       ```js
+        var person = {
+            firstName: 'John',
+            lastName: 'Doe'
+        }
+        
+        var boy = Object.create(person); // This will create an empty object but person object will set as the prototype of the boy object. In Chrome you can see prototype of an object using __proto__ property. Ex: boy.__proto__ 
+        ```
+    
     - Using constructor function
     - Using ES6 classes
     
