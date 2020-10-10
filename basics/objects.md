@@ -30,7 +30,7 @@
         }
         ```
     - Object.create
-        - The first argument you give Object.create is the object to use as the prototype of the object it creates.
+        - The first argument you give Object.create is the object to use as the [prototype](https://github.com/lahiruz/JS-Interview/blob/master/basics/prototype.md) of the object it creates.
     
        ```js
         var person = {
