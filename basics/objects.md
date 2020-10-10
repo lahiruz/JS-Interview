@@ -29,6 +29,22 @@
             lastName: 'Doe'
         }
         ```
+        
+    - Using constructor function  
+    
+        ```js
+        function Person(name){
+            this.name = name;
+        }
+        
+        Person.prototype.print = function(){
+            console.log("Hi " + this.name);
+        }
+        
+        var person = new Person("lahiru"); // using new keyword you can create an object using constructor function.
+        person.print(); // Hi lahiru
+        ```
+        
     - Object.create
         - The first argument you give Object.create is the object to use as the [prototype](https://github.com/lahiruz/JS-Interview/blob/master/basics/prototype.md) of the object it creates.
     
@@ -42,8 +58,23 @@
         ```
         - Also [read this](https://stackoverflow.com/questions/16666231/difference-between-object-createobject-prototype-object-createobject-and-o#:~:text=var%20o%20%3D%20Object.-,create(Object)%3B,a%20function%20as%20its%20prototype.) if you still have questions.
     
-    - Using constructor function
     - Using ES6 classes
+    
+        ```js
+        class Person {
+            constructor(name) {
+                this.name = name;
+            }
+
+            print() {
+                console.log("Hi " + this.name);
+            }
+        }
+    
+        var person = new Person("lahiru"); // using new keyword you can create an object using ES6 classes.
+        person.print(); // Hi lahiru
+        ```
+        - check more about classes [here](https://github.com/lahiruz/JS-Interview/blob/master/basics/class.md)
     
 * In Javascript objects are stored as references while primitives are stored as values. Therefore, when you try to compare two objects it will only compare object references.
 
