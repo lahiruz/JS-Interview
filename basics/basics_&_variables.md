@@ -12,6 +12,8 @@
 
 * Javascript also called as a multi-paradigm language. That means you can do **Functional Programming** as well as **Object Oriented Programming** with JavaScript. Javascript supports OOP with [**prototypal inheritance**](https://github.com/lahiruz/JS-Interview/blob/master/basics/prototype.md).
 
+* Javascript is a garbage collected language.
+
 ## variables & data types
 
 * You can create variables using **var**, **let** and **const**.
