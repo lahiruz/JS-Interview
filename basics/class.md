@@ -86,3 +86,11 @@
   var person = new Boy("lahiru");
   person.print(); // print "I am Person" frist and then print "I am lahiru"
   ```
+
+* You can use **instanceof** check the type of an object. Let's consider same example in the above.
+
+  ```js
+  console.log(person instanceof Boy); // true
+  console.log(person instanceof Person); // true
+  console.log(person instanceof Object); // true
+  ```
