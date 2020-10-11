@@ -8,7 +8,7 @@
 
 * V8 (Google Chrome, NodeJS, Electron), SpiderMonkey (Firefox), Chakra (Microsoft Edge), Javascript Core (Safari, React Native), etc… are samples for available Browser Javascript Engines out there. (If you want clear idea about how this works check my article [here](https://medium.com/@lsampath999/do-you-know-how-exactly-browser-works-9f510321ee9e))
 
-* Everything in Javascript is an **Object** (refer objects section for more details).
+* Everything in Javascript is an **Object** (refer [objects](https://github.com/lahiruz/JS-Interview/blob/master/basics/objects.md) section for more details).
 
 * Javascript also called as a multi-paradigm language. That means you can do **Functional Programming** as well as **Object Oriented Programming** with JavaScript. Javascript supports OOP with [**prototypal inheritance**](https://github.com/lahiruz/JS-Interview/blob/master/basics/prototype.md).
 
