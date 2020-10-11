@@ -9,3 +9,4 @@ While I am adding more details you can check on this first. :wink:
 - [Hoisting](https://github.com/lahiruz/JS-Interview/blob/master/basics/hoisting.md)
 - [Prototype](https://github.com/lahiruz/JS-Interview/blob/master/basics/prototype.md)
 - [Objects](https://github.com/lahiruz/JS-Interview/blob/master/basics/objects.md)
+- [Class](https://github.com/lahiruz/JS-Interview/blob/master/basics/class.md)
