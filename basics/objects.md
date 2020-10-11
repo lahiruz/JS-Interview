@@ -173,7 +173,12 @@
        
         - Deep cloning - copy all properties of object. There is no readily available method to do this. You can you lodash kind of third party library to perform this.
 
-* To see more details of objects please see follwoing videos.
-   - [Objects (Fundamentals)](https://www.youtube.com/watch?v=QqO8NI7i8ts&list=PLlN2Z5_OYXFoUEkrZgxVENs-_wDdifln3&index=7&ab_channel=SCIENTIA24X7)
-   - [Objects (Advanced)](https://www.youtube.com/watch?v=IHVJtBPSAVY&list=PLlN2Z5_OYXFoUEkrZgxVENs-_wDdifln3&index=8&ab_channel=SCIENTIA24X7)
-
+* Never declare number, string, boolean primitive types as objects.
+    
+    ```js
+    var str1 = 'Sam';
+    var str2 = new String('Sam');
+    
+    str1 == str2 // true, bcz values are same
+    str1 === str2 // false, bcz str1 is string type and str2 is object type. Remember to use this strict type (===) when comparing proerties.
+    ```
