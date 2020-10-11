@@ -53,7 +53,7 @@
 
 ## prototypal inheritance
 
-* In Javascript prototypal inheritance is happended via **Prototypal Chain**.
+* In Javascript prototypal inheritance is happended via **Prototypal Chain**. Also you can see how you can do inheritance with ES6 classes [here](https://github.com/lahiruz/JS-Interview/blob/master/basics/class.md).
 
 * Let's see how it works.
 
