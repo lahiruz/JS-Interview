@@ -31,6 +31,12 @@
   var person = new Person("lahiru"); // using new keyword you can create an object using ES6 classes.
   person.print(); // Hi lahiru
   ```
+
+* Also you can define classes in following way.
+
+  ```js
+  let Person = class {}
+  ```
   
 * Class declarations are not hoisted.
 
@@ -94,3 +100,36 @@
   console.log(person instanceof Person); // true
   console.log(person instanceof Object); // true
   ```
+
+## Mixins
+
+* This a way to adding multiple behaviours to a class. It is something like doing multiple inheritance.
+
+* A mixin provides methods that implement a certain behavior, but we do not use it alone, we use it to add the behavior to other classes.
+
+```js
+// mixin
+let sayHiMixin = {
+  sayHi() {
+    alert(`Hello ${this.name}`);
+  },
+  sayBye() {
+    alert(`Bye ${this.name}`);
+  }
+};
+
+// usage:
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+// copy the methods
+Object.assign(User.prototype, sayHiMixin);
+
+// now User can say hi
+new User("Dude").sayHi(); // Hello Dude!
+```
+
+* Refer [this](https://javascript.info/mixins) for more details.
