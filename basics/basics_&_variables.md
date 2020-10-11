@@ -12,7 +12,11 @@
 
 * Javascript also called as a multi-paradigm language. That means you can do **Functional Programming** as well as **Object Oriented Programming** with JavaScript. Javascript supports OOP with [**prototypal inheritance**](https://github.com/lahiruz/JS-Interview/blob/master/basics/prototype.md).
 
-* Javascript is a garbage collected language.
+* Javascript is automatically garbage collected language. That means, in Javascript, it automatically allocates memory when variables/objects are created and frees it when they are not used anymore.
+
+* Javascript is a single threaded language. That means, it does one thing at a time. Now you may have a question, how it handles asynchronous operations and how it do other things that people say Javascript can do. To understand that better you need to look for [Javascript Event Loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ&ab_channel=JSConf).
+
+* as a summery we can see **Javascript is interpreted or compiled, multi-paradigm, garbage collected and single threaded language which is used in both client and server side programming**.
 
 ## variables & data types
 
