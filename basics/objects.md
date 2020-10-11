@@ -76,7 +76,102 @@
         ```
         - check more about classes [here](https://github.com/lahiruz/JS-Interview/blob/master/basics/class.md)
     
-* In Javascript objects are stored as references while primitives are stored as values. Therefore, when you try to compare two objects it will only compare object references.
+* In Javascript objects are stored as references while primitives are stored as values. Therefore, when you try to compare two objects it will only compare object references. Check following example to understand it better. 
+
+    ```js
+    var person1 = {
+        firstName: 'John',
+        lastName: 'Doe'
+    }
+        
+    var person2 = {
+        firstName: 'John',
+        lastName: 'Doe'
+    }
+        
+    var person3 = person1;
+        
+    person1 == person2; // false, allthough both have same property set, it will return false, as it is comparing memory reference.
+    person1 === person2; // false
+        
+    person1 == person3; // true
+    person1 === person3; // true
+    ```
+
+* Also you have following specific operators to do special things with objects.
+
+    - for ... in -> for object enumeration
+    ```js
+    var person = {
+        firstName: 'John',
+        lastName: 'Doe'
+    }
+        
+    for (var itm in person) {
+        console.log(person[itm]); // print John and Doe
+    }
+    ```
+    
+    - Object.keys, Object.values & Object.entries  -> for object enumeration via object keys, values & properties
+    ```js
+    var person = {
+        firstName: 'John',
+        lastName: 'Doe'
+    }
+        
+    Object.keys(person).map(d => {
+        console.log(d); // print firstName & lastName
+    });
+    
+    Object.values(person).map(d => {
+        console.log(d); //  // print John and Doe
+    });
+    
+    Object.entries(person).map(d => {
+        console.log(d); //  // print ["firstName", "John"] and ["lastName", "Doe"]
+    });
+    ```
+    
+        
+    - Object.freeze -> for creating immutable objects
+    ```js
+    var person = {
+        firstName: 'John',
+        lastName: 'Doe'
+    }
+        
+    Object.freeze(person);
+    
+    person.age = 12;
+    
+    console.log(person); // {firstName: "John", lastName: "Doe"} return same object and won't add age proerty as it is freezed. But if you run this code in 'use strict' mode it will throw and error.
+    ```
+    
+    - Object cloning -> to clone existing objects. 
+        ```js
+        var person1 = {
+            firstName: 'John',
+            lastName: 'Doe'
+        }
+
+        var person2 = person1; //. Note that this is not any cloning method. In here both objects are refering to same memory location.
+        ```
+        - Shallow cloning - copies primitive types like strings and numbers inside object. But if there are any object references, those will not be recursively copied, but instead the new, copied object will reference the same object. You can use following ways to do it.
+            
+            ```js
+            const original = {
+                name: 'Fiesta',
+                car: {
+                    color: 'blue',
+                }
+            }
+            const copied = Object.assign({}, original); // using Object.assign. In this example, name primitive type will create a copy and car object will point to same memory location of car property inside original object.
+            
+            
+            const copied = { ...original } // using ES6 spread operator
+            ```
+       
+        - Deep cloning - copy all properties of object. There is no readily available method to do this. You can you lodash kind of third party library to perform this.
 
 * To see more details of objects please see follwoing videos.
    - [Objects (Fundamentals)](https://www.youtube.com/watch?v=QqO8NI7i8ts&list=PLlN2Z5_OYXFoUEkrZgxVENs-_wDdifln3&index=7&ab_channel=SCIENTIA24X7)
