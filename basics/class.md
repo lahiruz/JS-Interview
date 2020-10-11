@@ -59,7 +59,7 @@
 
 * You can use get and set methods with classes.
 
-* Also you can do inheritance with classes using **extends** and **super** keywords.
+* Also you can do inheritance with classes using **extends** and **super** keywords. Underlinely it is the same thing which you do with [prototypical inheritance](https://github.com/lahiruz/JS-Interview/blob/master/basics/prototype.md).
 
   ```js
   class Person {
