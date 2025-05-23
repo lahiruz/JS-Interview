@@ -1,4 +1,4 @@
-# Welcome to class
+# Welcome to design patters
 
 * Here is few design patters in JavaScript.
 
