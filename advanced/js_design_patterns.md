@@ -1,6 +1,6 @@
-# Welcome to design patters
+# Welcome to design patterns
 
-* Here is few design patters in JavaScript.
+* Here is few design patterns in JavaScript.
 
 ## Module Pattern
 
