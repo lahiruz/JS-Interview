@@ -37,6 +37,32 @@ console.log(MathUtils.add(4, 4)); // 8
 ## Singleton Pattern
 
   ```js
+const Config = (function () {
+  let instance = null;
+
+  function ConfigConstructor() {
+    this.apiUrl = 'https://api.example.com';
+    this.debug = true;
+  }
+
+  function createInstance() {
+    console.log('initiating');
+    return new ConfigConstructor();
+  }
+
+  function getInstance() {
+    if (instance == null) {
+      instance = createInstance();
+    }
+
+    return instance;
+  }
+
+  return getInstance;
+})();
+
+const a = Config();
+const b = Config();
  
   ```
 
