@@ -1,10 +1,10 @@
-# Map Implementation
+# Array Map Implementation
 
   ```js
   function map(items, callback) {
     const mappedItems = [];
 
-    for (let i = 0; i< items.length; i++){
+    for (let i = 0; i < items.length; i++){
       mappedItems.push(callback(items[i], i, items));
     }
 

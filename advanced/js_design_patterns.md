@@ -6,11 +6,11 @@
 
   ```js
 const MathUtils = (() => {
-  function add(a, b) {
-    return a + b;
-  }
+    function add(a, b) {
+      return a + b;
+    }
 
-  return { add: addNumbers };
+    return { add: addNumbers };
 })();
 
 console.log(MathUtils.addNumbers(2, 4)); // 6
@@ -21,13 +21,13 @@ console.log(MathUtils.addNumbers(2, 4)); // 6
 
   ```js
 const MathUtils = (() => {
-  function add(a, b) {
-    return a + b;
-  }
+    function add(a, b) {
+      return a + b;
+    }
 
-  // module internals will be revealed as it is unlike the Module Pattern.
-  // That is why it is different from Module Pattern.
-  return { add };
+    // module internals will be revealed as it is unlike the Module Pattern.
+    // That is why it is different from Module Pattern.
+    return { add };
 })();
 
 console.log(MathUtils.add(4, 4)); // 8
